@@ -640,7 +640,6 @@ class WebViewController {
   /// `url` must not be null.
   Future<void> loadLocalHtmlFile(String url) async {
     assert(url != null);
-    _validateUrlString(url);
     return _webViewPlatformController.loadLocalHtmlFile(url);
   }
 
